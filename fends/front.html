@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BAMAZON</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+		$(".logo2").hide();		
+    	$(".logo").animate({top: "+=80"},1000);
+    	$(".logo").animate({opacity: 0.0},500,function(){
+			window.location="menu";
+		});
+    });
+    </script>
+    <style>
+    html{
+    	min-height: 100%;
+    	overflow: hidden;
+    }
+    .logo{
+    	font-family: 'Bangers', cursive;
+    	font-size: 200px;
+    	margin-left: 280px;
+    	margin-top: 60px;
+    	color: white;
+    	transform: rotate(-15deg);
+		position: relative;
+    }
+	.logo2{
+		font-family: 'Bangers', cursive;
+		font-size: 50px;
+		margin-left: 400px;
+		color: white;
+	}
+	body{
+		background-color: black;
+	}
+    a{
+        text-decoration: none !important;
+    }
+    </style>
+</head>
+<body>
+<div class='container-fluid'>
+	<div class="logo">BAMAZON</div>
+	<div class="main">
+		<div class="logo2">
+			BAMAZON
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

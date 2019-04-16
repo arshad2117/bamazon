@@ -1,0 +1,133 @@
+!<DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BAMAZON</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+		$(".main").animate({opacity: 1,top: "+=50"},1000);
+		$(".btn").click(function(){
+			var title = $("#title").val();
+			var isbn = $("#isbn").val();
+			var supplier = $("#supplier").val();
+			var author = $("#author").val();
+			var publisher = $("#publisher").val();
+			console.log(author);
+			//perform post request or query over here
+		});
+    });
+    </script>
+    <style>
+    html{
+    	min-height: 100%;
+    }
+	.logo2{
+		font-family: 'Bangers', cursive;
+		font-size: 80px;
+		margin-left: 520px;
+		margin-top: -50px;
+		color: white;
+	}
+	.quote{
+		font-family: 'Noto Serif', serif;
+		font-size: 30px;
+		margin-left: 445px;
+		margin-top: -20px;
+		color: white;
+	}
+	body{
+		background-color: black;
+	}
+	.main{
+		position:relative;
+		opacity: 0;
+	}
+	.sbya{
+		font-family: 'Noto Serif', serif;
+		font-size: 30px;
+		color: white;
+		margin-left: 530px;
+		margin-top: 25px;
+		font-family: 'Patua One', cursive;
+	}
+	.inpbar1{
+		margin-top: 0px;
+		margin-left: -80px;
+		width: 400px;
+		color: black;
+		padding-left: 10px;
+		border-radius: 5%
+		outline: none;
+		border: none;
+	}
+	.btn{
+		font-size: 20px;
+		margin-left: 65px;
+		margin-top: 20px;
+		background-color: white;
+		color: black;
+		outline: none;
+		border: none;
+	}
+	.btn:hover,.btn:active,.btn:focus{
+		color: white;
+		background-color: black;
+	}
+	a{
+		text-decoration: none;
+	}
+    </style>
+</head>
+<body>
+<div class='container-fluid'>
+	<div class="main">
+		<a href="/menu">
+			<div class="logo2">
+				BAMAZON
+			</div>
+			<div class="quote">
+				The bookstore for millenials.		
+			</div>
+		</a>
+		<form method="POST" action="/addp">
+			<div class="sbya">
+				<input class="inpbar1" id = "title" name = "title" placeholder = "Enter Title" type = "text"><br>	
+			</div>
+			<div class="sbya">
+				<input class="inpbar1" id = "isbn" name = "isbn" placeholder = "Enter ISBN" type = "text"><br>	
+			</div>
+			<div class="sbya">
+				<input class="inpbar1" id = "Year of Publishing" name = "when" placeholder = "Enter Year of Publishing" type = "text"><br>	
+			</div>
+			<div class="sbya">
+				<input class="inpbar1" id = "author" name = "author" placeholder = "Enter Author" type = "text"><br>	
+			</div>
+			<div class="sbya">
+				<input class="inpbar1" id = "sid" name = "sid" placeholder = "Enter SID" type = "text"><br>	
+			</div>
+			<div class="sbya">
+				<input class="inpbar1" id = "price" name = "price" placeholder = "Enter Price" type = "text"><br>	
+			</div>
+			<div class="sbya">
+				<input class="inpbar1" id = "quantity" name = "quantity" placeholder = "Enter Quantity" type = "text"><br>	
+			</div>
+			<div class="sbya">
+				<input class="inpbar1" id = "publisher" name = "publisher" placeholder = "Enter Publisher" type = "text"><br>	
+				<button class="btn btn-primary" type = "SUBMIT">
+					SUBMIT
+				</button>	
+			</div>
+		</form>
+	</div>
+</div>
+
+</body>
+</html>
+

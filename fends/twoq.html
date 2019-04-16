@@ -1,0 +1,109 @@
+!<DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BAMAZON</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+		$(".main").animate({opacity: 1,top: "+=50"},1000);
+		
+    });
+    </script>
+    <style>
+    html{
+    	min-height: 100%;
+    	overflow: hidden;
+    }
+	.logo2{
+		font-family: 'Bangers', cursive;
+		font-size: 80px;
+		margin-left: 520px;
+		margin-top: 0px;
+		color: white;
+	}
+	.quote{
+		font-family: 'Noto Serif', serif;
+		font-size: 30px;
+		margin-left: 445px;
+		margin-top: -20px;
+		color: white;
+	}
+	body{
+		background-color: black;
+	}
+	.main{
+		position:relative;
+		opacity: 0;
+	}
+	.sbya{
+		font-family: 'Noto Serif', serif;
+		font-size: 30px;
+		color: white;
+		margin-left: 520px;
+		margin-top: 50px;
+		font-family: 'Patua One', cursive;
+	}
+	.inpbar1{
+		margin-top: 10px;
+		margin-left: -80px;
+		width: 400px;
+		color: black;
+		padding-left: 10px;
+		border-radius: 5%
+		outline: none;
+		border: none;
+	}
+	.btn{
+		font-size: 20px;
+		margin-left: -95px;
+		height: 50px;
+		margin-top: 10px;
+		background-color: white;
+		color: black;
+		outline: none;
+		border: none;
+	}
+	.btn:hover,.btn:active,.btn:focus{
+		color: white;
+		background-color: black;
+	}
+	a{
+		text-decoration: none !important;
+	}
+    </style>
+</head>
+<body>
+<div class='container-fluid'>
+	<div class="main">
+		<div class="logo2">
+			BAMAZON
+		</div>
+		<div class="quote">
+			The bookstore for millenials.		
+		</div>
+		<div class="sbya">
+			<a href = "/popwomen">
+			<button class="btn btn-primary">
+				SEARCH TOP FEMALE AUTHORS BY RATING
+			</button>		
+			</a>
+		</div>
+		<div class="sbya">
+			<a href = "/oldwomen">
+			<button class="btn btn-primary" style="margin-left: -110px">
+				SEARCH HIGHEST GROSSING FEMALE AUTHORS
+			</button>		
+			</a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

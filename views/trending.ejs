@@ -1,0 +1,109 @@
+!<DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BAMAZON</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+		$(".main").animate({opacity: 1,top: "+=50"},1000);
+    });
+    </script>
+    <style>
+    html{
+    	min-height: 100%;
+    }
+	.logo2{
+		font-family: 'Bangers', cursive;
+		font-size: 80px;
+		margin-left: 520px;
+		margin-top: 20px;
+		color: white;
+	}
+	.quote{
+		font-family: 'Noto Serif', serif;
+		font-size: 30px;
+		margin-left: 445px;
+		margin-top: -20px;
+		color: white;
+	}
+	body{
+		background-color: black;
+	}
+	.main{
+		position:relative;
+		opacity: 0;
+	}
+	.sbya{
+		font-family: 'Noto Serif', serif;
+		font-size: 30px;
+		color: white;
+		margin-left: 390px;
+		margin-top: 50px;
+		font-family: 'Patua One', cursive;
+	}
+	.inpbar1{
+		margin-top: 10px;
+		margin-left: -180px;
+		width: 430px;
+		color: black;
+		padding-left: 10px;
+		border-radius: 5%
+		outline: none;
+		border: none;
+	}
+	.btn{
+		font-size: 20px;
+		margin-left: 470px;
+		margin-top: 10px;
+		width: 350px;
+		height: 60px;
+		background-color: white;
+		color: black;
+		outline: none;
+		border: none;
+	}
+	.btn:hover,.btn:active,.btn:focus{
+		color: black;
+		background-color: white;
+	}
+	input{
+		font-family: 'Anton', sans-serif;
+		text-align: center;
+		font-size: 20px;
+		width: 280;
+		margin-left: -310px !important;
+	}
+	a{
+		text-decoration: none !important;
+	}
+    </style>
+</head>
+<body>
+<div class='container-fluid'>
+	<div class="main">
+		<a href="/menu">
+			<div class="logo2">
+				BAMAZON
+			</div>
+			<div class="quote">
+				The bookstore for millenials.		
+			</div>
+		</a>
+		
+	<% data.forEach(function(item){ %>
+		<li>  <button class="btn btn-primary" type = "submit"></button><input readonly = "readonly" style="color:black; text-align: center;outline: none; border: none; margin-left: -200px;margin-top: 30px" name = "title" type="text" value = "<%= item['Title'] %>  By  <%= item['Author'] %>"></li>
+	<% }); %>
+	</div>
+</div>
+
+</body>
+</html>
+
