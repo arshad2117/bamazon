@@ -3,7 +3,7 @@ var mysql      = require('mysql');
 var bodyParser = require('body-parser');
  var connection = mysql.createConnection({
    host     : 'arshad.cfsoole1sfph.us-east-1.rds.amazonaws.com',
-	 port: '3306',
+	 port: '3260',
    user     : 'arshad',
    password : 'arshad1919',
    database : 'miniproject',
