@@ -295,7 +295,7 @@ app.get('/splq',function(req,res){
  if(!err) {
      console.log("Database is connected ... \n\n");  
  } else {
-     console.log("Error connecting database ... \n\n");  
+     console.log(err);
  }
  });
 
