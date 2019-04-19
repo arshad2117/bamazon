@@ -6,7 +6,8 @@ var bodyParser = require('body-parser');
 	 port: '3306',
    user     : 'arshad',
    password : 'arshad1919',
-   database : 'miniproject'
+   database : 'miniproject',
+   timeout: 60000
  });
  var app = express();
  app.set('view engine', 'ejs');
